@@ -1,0 +1,11 @@
+login page hey sameek,
+
+Your acomplishment should be
+
+-Vallidation js
+-php & mysql login page 
+-dirctory with validation sucsessful
+-remmember password
+-show password
+-butiful login form
+etc..
