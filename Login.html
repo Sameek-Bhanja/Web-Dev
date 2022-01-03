@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login & Regisration</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="Login.js"></script>
+  </head>
+  <body>
+    <div class="hero">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">
+            Login
+          </button>
+          <button type="button" class="toggle-btn" onclick="register()">
+            Register
+          </button>
+        </div>
+        <div class="social-icons">
+          <img src="login-reg-img/fb.png" />
+          <img src="login-reg-img/tw.png" />
+          <img src="login-reg-img/gp.png" />
+        </div> 
+        <!-- login -->
+        <form id="login" class="input-group">
+          <input
+            type="text"
+            id="id_LoginUsername"
+            class="input-field"
+            placeholder="username"
+            required
+          />
+          <input 
+            type="password"
+            id="id_LoginPassword"
+            class="input-field"
+            placeholder="password"
+            required
+          />
+          <!-- Password visibility -->
+          <input type="checkbox" class="check-box" onclick="ShowPassword()">
+          <span class="check-box-SP">ShowPassword </span>
+          <br>
+          <!-- Save password -->          
+          <input type="checkbox" class="check-box" /><span
+            >Remember Password</span
+          >
+          <!-- Validate UserName & Password -->
+          <input type="submit" value="Click to Login" id="submit" onclick="validate()" class="submit-btn">
+        </form>
+        <!-- Register -->
+        <form id="Register" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Username"
+            required
+          />
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Email Id"
+            required
+          />
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Password"
+            required
+          />
+          <input type="checkbox" class="check-box" /><span
+            >I agree to the terms and conditions</span
+          >
+          <button type="submit" class="submit-btn">Register</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
